@@ -7,9 +7,9 @@ app = Flask(__name__)
 CORS(app)
 
 # MySQL instance configurations
-app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_USER'] = 'crud_user'
 app.config['MYSQL_PASSWORD'] = 'QLPM6T5vSb23bbDw'
-app.config['MYSQL_DB'] = 'flask_crud_db'
+app.config['MYSQL_DB'] = 'flask-crud-db'
 # Use Unix socket for Cloud SQL instance connection
 app.config['MYSQL_HOST'] = '/cloudsql/your-project-id:europe-west2:flask-crud-instance'
 mysql = MySQL(app)
