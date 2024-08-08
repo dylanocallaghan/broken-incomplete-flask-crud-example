@@ -7,4 +7,5 @@ steps:
     args: ['run', 'deploy', 'my-crud-app', '--image', 'gcr.io/$PROJECT_ID/my-crud-app', '--platform', 'managed', '--region', 'europe-west2', '--add-cloudsql-instances', 'your-project-id:europe-west2:flask-crud-instance']
 images:
   - 'gcr.io/$PROJECT_ID/my-crud-app'
-
+options:
+  logging: CLOUD_LOGGING_ONLY
